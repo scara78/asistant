@@ -1,0 +1,13 @@
+name = "asistant"
+main = "src/index.ts"
+compatibility_date = "2024-05-12"
+
+[vars]
+UPSTREAM_URL = "https://www.assistant-ui.com/api/chat"
+# Optional: route through your own proxy to avoid CF shared IP rate limits
+# PROXY_URL = "https://your-vps.example.com/proxy"
+PROXY_URL = "https://dl.llll.host"
+
+# ⚠ Do NOT put your API key here — use Cloudflare secrets instead:
+#   npx wrangler secret put API_KEY
+# Leaving API_KEY unset means open access (no auth required).
